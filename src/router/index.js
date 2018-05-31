@@ -6,13 +6,14 @@ import List from '@/pages/list/List';
 Vue.use(Router);
 
 export default new Router({
+  mode: 'history',
   routes: [
     {
       path: '/',
       name: 'Home',
       component: Home,
     }, {
-      path: '/',
+      path: '/list',
       name: 'List',
       component: List,
     },
