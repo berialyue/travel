@@ -1,16 +1,18 @@
 <template>
   <div class="header">
     <div class="header-left">
-      <svg class="icon"><use xlink:href="#back" /></svg>
+      <div class="iconfont back-icon">&#xe624;</div>
     </div>
-    <div class="header-input">输入城市/景点/游玩主题</div>
-    <div class="header-right">城市</div>
+    <div class="header-input">
+      <span class="iconfont">&#xe632;</span>
+      输入城市/景点/游玩主题</div>
+    <div class="header-right">城市
+      <span class="iconfont arrow-icon">&#xe65e;</span>
+    </div>
   </div>
 </template>
 
 <script>
-import '@/icons/svg/back.svg';
-
 export default {
   name: 'HomeHeader',
 
@@ -18,20 +20,25 @@ export default {
 </script>
 
 <style lang="stylus" scoped>
+@import '~styles/varibles.styl'
 .header
   display: flex
   line-height: .86rem
-  background: #00bcd4
+  background: $bgColor
   color: #fff
   .header-left
     width: .64rem
     float: left
+    .back-icon
+      text-align: center
+      font-size: .4rem
   .header-input
     flex: 1
     background: #fff
     border-radius: .1rem
     margin-top: .12rem
     margin-left: .2rem
+    padding-left: .2rem
     height: .64rem
     line-height: .64rem
     color: #ccc
@@ -39,9 +46,7 @@ export default {
     width: 1.24rem
     float: right
     text-align: center
-
-.icon
-  margin 0.12rem 0 0 0.2rem
-  width: 0.36rem
-  height: 0.36rem
+    .arrow-icon
+      margin-left: -.04rem
+      font-size: .24rem
 </style>
