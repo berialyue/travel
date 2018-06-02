@@ -1,5 +1,20 @@
 <template>
-<div>
-  <div>home</div>
-</div>
+  <div class="Home">
+    <home-header></home-header>
+  </div>
 </template>
+
+<script>
+import HomeHeader from './compoents/Header';
+
+export default {
+  name: 'Home',
+  components: {
+    HomeHeader,
+  },
+};
+</script>
+
+<style lang="stylus" scoped>
+
+</style>
