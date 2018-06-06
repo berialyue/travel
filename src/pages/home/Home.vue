@@ -10,11 +10,11 @@
 
 <script>
 import axios from 'axios';
-import HomeHeader from './compoents/Header';
-import HomeSwiper from './compoents/Swiper';
-import HomeIcons from './compoents/icons';
-import HomeRecommend from './compoents/Recommend';
-import HomeWeekend from './compoents/Weekend';
+import HomeHeader from './components/Header';
+import HomeSwiper from './components/Swiper';
+import HomeIcons from './components/icons';
+import HomeRecommend from './components/Recommend';
+import HomeWeekend from './components/Weekend';
 
 export default {
   name: 'Home',
