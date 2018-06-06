@@ -1,6 +1,6 @@
 <template>
   <div>
-    <div class="title">热销推荐</div>
+    <h2 class="title">热销推荐</h2>
     <ul>
       <li class="item" border-bottom v-for="item of recommendList" :key="item.id">
           <img class="item-img" :src="item.recommendUrl">
