@@ -1,6 +1,6 @@
 <template>
   <div class="wrapper">
-    <swiper :options="swiperOption">
+    <swiper :options="swiperOption" v-if="showswiper">
       <swiper-slide v-for="item of swiperList" :key="item.id">
         <img class="swiper-img" :src="item.imgUrl">
       </swiper-slide>
@@ -12,31 +12,22 @@
 <script>
 export default {
   name: 'HomeSwiper',
+  props: {
+    swiperList: Array,
+  },
   data() {
     return {
       swiperOption: {
         pagination: '.swiper-pagination',
         loop: true,
       },
-      swiperList: [{
-        id: '0001',
-        imgUrl: 'http://img1.qunarzz.com/piao/fusion/1703/c1/681faf4fa8ae6e02.jpg_750x200_66a2f930.jpg',
-      }, {
-        id: '0002',
-        imgUrl: 'http://img1.qunarzz.com/piao/fusion/1805/fe/ca8ed7adc3ff9f02.jpg_750x200_49735140.jpg',
-      }],
     };
   },
-  // computed: {
-  //   swiper() {
-  //     return this.$refs.mySwiper.swiper;
-  //   },
-  // },
-  // mounted() {
-  //   // current swiper instance
-  //   // 然后你就可以使用当前上下文内的swiper对象去做你想做的事了
-  //   this.swiper.slideTo(3, 1000, false);
-  // },
+  computed: {
+    showswiper() {
+      return this.swiperList.length;
+    },
+  },
 };
 </script>
 
