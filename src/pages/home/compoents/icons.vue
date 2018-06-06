@@ -16,44 +16,14 @@
 <script>
 export default {
   name: 'HomeIcons',
+  props: {
+    iconList: Array,
+  },
   data() {
     return {
       swiperOption: {
         autoplay: false,
       },
-      iconList: [{
-        id: '01',
-        iconUrl: 'http://img1.qunarzz.com/piao/fusion/1803/95/f3dd6c383aeb3b02.png',
-        desc: '景点门票',
-      }, {
-        id: '02',
-        iconUrl: 'http://img1.qunarzz.com/piao/fusion/1803/bd/9f7b9b2b60c1502.png',
-        desc: '踏青赏花',
-      }, {
-        id: '03',
-        iconUrl: 'http://img1.qunarzz.com/piao/fusion/1804/ed/cf572be30fc32f02.png',
-        desc: 'Q+精选',
-      }, {
-        id: '04',
-        iconUrl: 'http://img1.qunarzz.com/piao/fusion/1804/5a/13ceb38dcf262f02.png',
-        desc: '一日游',
-      }, {
-        id: '05',
-        iconUrl: 'http://img1.qunarzz.com/piao/fusion/1804/ff/fdf170ee89594b02.png',
-        desc: '必游榜单',
-      }, {
-        id: '06',
-        iconUrl: 'http://img1.qunarzz.com/piao/fusion/1803/76/eb88861d78fb9902.png',
-        desc: '动植物园',
-      }, {
-        id: '07',
-        iconUrl: 'http://img1.qunarzz.com/piao/fusion/1803/20/831d62d2e1c7be02.png',
-        desc: '名胜古迹',
-      }, {
-        id: '08',
-        iconUrl: 'http://img1.qunarzz.com/piao/fusion/1803/54/35899492b1302802.png',
-        desc: '公园',
-      }],
     };
   },
   computed: {
