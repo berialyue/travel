@@ -1,14 +1,6 @@
 <template>
 <ul class="list">
-  <li class="item">A</li>
-  <li class="item">A</li>
-  <li class="item">A</li>
-  <li class="item">A</li>
-  <li class="item">A</li>
-  <li class="item">A</li>
-  <li class="item">A</li>
-  <li class="item">A</li>
-  <li class="item">A</li>
+  <li class="item" v-for="(item, key) of cities" :key="key">{{key}}</li>
 </ul>
 </template>
 
@@ -18,8 +10,7 @@ import Bscroll from 'better-scroll';
 export default {
   name: 'CityAlphabet',
   props: {
-    presentcity: String,
-    hotcitys: Array,
+    cities: Object,
   },
   mounted() {
     this.scroll = new Bscroll(this.$refs.wrapper);
