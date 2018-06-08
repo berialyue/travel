@@ -27,15 +27,9 @@
         <div class="item-list">
           <div
             class="item border-bottom"
-<<<<<<< HEAD
-            v-for="city of item"
-            :key="city.id">
-            {{city.name}}
-=======
             v-for="innerItem of item"
             :key="innerItem.id">
             {{innerItem.name}}
->>>>>>> 8c623f7ff26ef2938dec13315f621b4dbc459c21
           </div>
         </div>
       </div>
