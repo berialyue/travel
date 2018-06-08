@@ -5,7 +5,7 @@
         <div class="title border-topbottom">当前城市</div>
         <div class="button-list">
           <div class="button-wrapper">
-            <div class="button">{{this.presentcity}}</div>
+            <div class="button">北京</div>
           </div>
         </div>
       </div>
@@ -22,9 +22,15 @@
         <div class="item-list">
           <div
             class="item border-bottom"
+<<<<<<< HEAD
+            v-for="city of item"
+            :key="city.id">
+            {{city.name}}
+=======
             v-for="innerItem of item"
             :key="innerItem.id">
             {{innerItem.name}}
+>>>>>>> 8c623f7ff26ef2938dec13315f621b4dbc459c21
           </div>
         </div>
       </div>
@@ -33,7 +39,7 @@
 </template>
 
 <script>
-import Bscroll from 'better-scroll';
+import BScroll from 'better-scroll';
 
 export default {
   name: 'CityList',
@@ -42,7 +48,7 @@ export default {
     hotCities: Array,
   },
   mounted() {
-    this.scroll = new Bscroll(this.$refs.wrapper);
+    this.scroll = new BScroll(this.$refs.wrapper);
   },
 };
 </script>
