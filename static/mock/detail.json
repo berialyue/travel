@@ -1,9 +1,9 @@
 {
   "ret": true,
   "data": {
-    "sightName": "大连圣亚海洋世界(AAAA景区)",
-    "bannerImg": "http://img1.qunarzz.com/sight/p0/201404/23/04b92c99462687fa1ba45c1b5ba4ad77.jpg_600x330_bf9c4904.jpg",
-    "gallaryImgs": ["http://img1.qunarzz.com/sight/p0/201404/23/04b92c99462687fa1ba45c1b5ba4ad77.jpg_800x800_70debc93.jpg", "http://img1.qunarzz.com/sight/p0/1709/76/7691528bc7d7ad3ca3.img.png_800x800_9ef05ee7.png"],
+    "sightName": "华清宫（华清池·骊山）(AAAAA景区)",
+    "bannerImg": "http://img1.qunarzz.com/sight/p0/1602/de/de8400021b664c5390.img.jpg_600x330_35e2f813.jpg",
+    "gallaryImgs": ["http://img1.qunarzz.com/sight/p0/1602/de/de8400021b664c5390.img.jpg_r_800x800_980118e2.jpg", "http://img1.qunarzz.com/sight/p0/1602/53/53cf6caed9f9b9ee90.img.jpg_r_800x800_fab81cd0.jpg" ,"http://img1.qunarzz.com/sight/p0/1602/2c/2ccb513f255467c790.img.jpg_r_800x800_521e679a.jpg", "http://img1.qunarzz.com/sight/p0/1602/31/31c5fd163f89ea1590.img.jpg_r_800x800_bb70d349.jpg"],
     "categoryList": [{
         "title": "成人票",
         "children": [{
