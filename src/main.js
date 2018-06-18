@@ -7,6 +7,7 @@ import 'swiper/dist/css/swiper.css';
 import 'styles/reset.css';
 import 'styles/border.css';
 import 'styles/iconfont.css';
+import 'babel-polyfill';
 import App from './App';
 import router from './router';
 import store from './store';
